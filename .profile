@@ -24,3 +24,4 @@ export XDG_DATA_HOME="$HOME"/.local/share
 export _JAVA_OPTIONS=-Djava.util.prefs.userRoot="$XDG_CONFIG_HOME"/java
 export IPYTHONDIR="$XDG_CONFIG_HOME"/jupyter
 export JUPYTER_CONFIG_DIR="$XDG_CONFIG_HOME"/jupyter
+export VSCODE_PORTABLE="$XDG_DATA_HOME"/vscode
