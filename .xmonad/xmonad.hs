@@ -186,10 +186,11 @@ myKeys conf@(XConfig {XMonad.modMask = modMask}) = M.fromList $
 --
 myStartupHook = do
  -- spawn "/usr/bin/stalonetray"
-  spawnOnce "/home/ilmi/.config/polybar/launch_polybar.sh"
-  spawnOnce "setxkbmap -layout tr"
-  spawnOnce "nitrogen --restore"
-  spawnOnce "nm-applet"
+  spawnOnce "/home/ilmi/.config/polybar/launch_polybar.sh &"
+  spawnOnce "setxkbmap -layout tr &"
+  spawnOnce "nitrogen --restore &"
+  spawnOnce "nm-applet &"
+  spawnOnce "/home/ilmi/.local/scripts/screenres.sh &"
 --  spawnOnce "dropbox"
 
 myScratchPads = [ NS "terminal" spawnTerm  findTerm manageTerm
